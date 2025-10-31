@@ -1,0 +1,5 @@
+{
+  "name": "LLANERA TV",
+  "description": "A multi-platform streaming app for movies and live TV, built with React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
