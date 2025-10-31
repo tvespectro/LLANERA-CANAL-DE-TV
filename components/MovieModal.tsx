@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Movie } from '../types';
 import { CloseIcon } from './icons';
@@ -22,7 +21,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
           <iframe
             src={movie.embedUrl}
             className="w-full h-full"
-            allow="autoplay"
+            allow="autoplay; fullscreen"
             allowFullScreen
             title={movie.title}
           ></iframe>
