@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { MOVIES } from '../constants';
 import { Movie } from '../types';
+import { addToRecentlyWatched } from '../utils/storage';
 import MovieCard from './MovieCard';
 import MovieModal from './MovieModal';
 
@@ -10,6 +11,7 @@ const MoviesScreen: React.FC = () => {
 
   const handleMovieClick = (movie: Movie) => {
     setSelectedMovie(movie);
+    addToRecentlyWatched(movie);
   };
 
   const handleCloseModal = () => {
